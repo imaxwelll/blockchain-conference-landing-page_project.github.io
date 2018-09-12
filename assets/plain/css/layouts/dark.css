@@ -1,0 +1,163 @@
+/* --------------------
+   -------------------- Reset -------------------- */
+body { color: #fff; background: #2b2c31; }
+
+
+/* --------------------
+   -------------------- Blocks / elements -------------------- */
+/* * * * * *
+ * * * * * * Carousels * * * * * */
+.b-carousel .owl-nav > div { color: #44454d; }
+
+
+/* --------------------
+   -------------------- Header -------------------- */
+.b-header { color: #fff; background: #000; }
+
+.b-header:before { background: #000; }
+.b-header:after { background: #000; }
+
+.b-header__transparent { color: #fff; background: transparent; }
+
+/* * * * * *
+ * * * * * * Logotype * * * * * */
+.b-header_logo__text { color: #fff; }
+
+/* * * * * *
+ * * * * * * Navigation * * * * * */
+.b-header_nav a { color: #fff; }
+
+@media (max-width: 767px) {
+
+    .b-header_nav { background: #000; }
+
+}
+
+@media (min-width: 768px) {
+
+    .b-header__transparent .b-header_nav a { color: #fff; }
+
+}
+
+.b-header_nav_toggle { color: #fff; }
+
+.b-header__showNav .b-header_nav_toggle { color: #fff; }
+.b-header__transparent .b-header_nav_toggle { color: #fff; }
+
+
+/* --------------------
+   -------------------- Sections -------------------- */
+.b-section { color: #fff; background: #2b2c31; }
+.b-section__solid { background: #36373d; }
+
+/* * * * * *
+ * * * * * * Section header * * * * * */
+.b-section_header h2 { color: #fff; }
+
+
+/* --------------------
+   -------------------- Sections :: Schedule -------------------- */
+/* * * * * *
+ * * * * * * Download * * * * * */
+.b-schedule_download_frame:hover { color: #fff; }
+
+/* * * * * *
+ * * * * * * Days nav * * * * * */
+.b-schedule_tabs_btn { color: #fff; background: #4f5159; }
+.b-schedule_tabs_btn:hover { color: #fff; background: #5b5d66; }
+
+.b-schedule_tabs_btn time { color: #aaa; }
+
+/* * * * * *
+ * * * * * * Device * * * * * */
+@media (min-width: 480px) {
+
+    .b-schedule_device { background: #4f5159; border: 4px solid #44454d; }
+    .b-schedule_device_screen { color: #fff; background: #2b2c31; border: 2px solid #44454d; }
+
+}
+
+/* * * * * *
+ * * * * * * Speech details * * * * * */
+.b-schedule_speech_header { color: #fff; }
+.b-schedule_speech_header_pic { -webkit-box-shadow: 0 0 0 3px #2b2c31; -moz-box-shadow: 0 0 0 3px #2b2c31; box-shadow: 0 0 0 3px #2b2c31; }
+
+.b-schedule_speech_header_dummy { -webkit-box-shadow: 0 0 0 3px #2b2c31; -moz-box-shadow: 0 0 0 3px #2b2c31; box-shadow: 0 0 0 3px #2b2c31; }
+
+/* * * * * *
+ * * * * * * Speech: caption * * * * * */
+.b-schedule_speech_toggle { color: #fff; }
+.b-schedule_speech_toggle_arrow { color: #fff; }
+
+/* * * * * *
+ * * * * * * Schedule day tabs * * * * * */
+.b-schedule_day_nav a { color: #aaa; }
+.b-schedule_day_nav a:hover { color: #aaa; background: #36373d; }
+
+@media (min-width: 480px) {
+
+    .b-schedule_day_nav a { color: #fff; background: #4f5159; }
+    .b-schedule_day_nav a:hover { color: #fff; background: #5b5d66; }
+
+    .b-schedule_day_nav a.current { color: #fff !important; }
+
+}
+
+
+/* --------------------
+   -------------------- Sections :: Pricing plans -------------------- */
+/* * * * * *
+ * * * * * * Pricing deck * * * * * */
+.b-pricing_plan_deck { background: #2b2c31; }
+.b-pricing_plan_deck_ribbon { color: #333; background: #fff; }
+
+/* * * * * *
+ * * * * * * Pricing deck content * * * * * */
+.b-pricing_plan_price { color: #aaa; }
+.b-pricing_plan_price strong { color: #fff; }
+
+.b-pricing_plan_purchase { color: #fff; background: #44454d; }
+.b-pricing_plan_purchase:hover { color: #fff; background: #4f5159; }
+
+
+/* --------------------
+   -------------------- Sections :: FAQ -------------------- */
+/* * * * * *
+ * * * * * * Device * * * * * */
+@media (min-width: 480px) {
+
+    .b-faq_device { background: #4f5159; border: 4px solid #44454d; }
+
+    .b-faq_device:after { background: #4f5159; }
+    .b-faq_device:before { background: #4f5159; }
+
+    .b-faq_device_home { background: #4f5159; border: 3px solid #44454d; }
+    .b-faq_device_cam { background: #17171b; }
+
+    .b-faq_device_power { background: #44454d; }
+    .b-faq_device_switcher { background: #44454d; }
+
+    .b-faq_device_volume_up { background: #44454d; }
+    .b-faq_device_volume_down { background: #44454d; }
+
+    .b-faq_device_head { background: #4f5159; border-right: 4px solid #44454d; }
+    .b-faq_device_footer { background: #4f5159; border-left: 4px solid #44454d; }
+
+    .b-faq_device_screen { background: #2b2c31; border: 2px solid #44454d; }
+
+}
+
+/* * * * * *
+ * * * * * * Slider * * * * * */
+@media (min-width: 970px) {
+
+    .b-faq_slider_item.b-slider_current + .b-faq_slider_item:before { background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzJiMmMzMSIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyYjJjMzEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+); background: -moz-linear-gradient(left, rgba(43,44,49,0) 0%, rgba(43,44,49,1) 100%); background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(43,44,49,0)), color-stop(100%,rgba(43,44,49,1))); background: -webkit-linear-gradient(left, rgba(43,44,49,0) 0%,rgba(43,44,49,1) 100%); background: -o-linear-gradient(left, rgba(43,44,49,0) 0%,rgba(43,44,49,1) 100%); background: -ms-linear-gradient(left, rgba(43,44,49,0) 0%,rgba(43,44,49,1) 100%); background: linear-gradient(to right, rgba(43,44,49,0) 0%,rgba(43,44,49,1) 100%); }
+
+}
+
+
+/* --------------------
+   -------------------- Sections :: Contacts -------------------- */
+/* * * * * *
+ * * * * * * Details * * * * * */
+.b-contacts_details { background: #2b2c31; }

@@ -1,0 +1,61 @@
+/* ----------------------- Default ----------------------- */
+input[type="checkbox"], input[type="radio"] { display: inline-block; margin-right: 7px; }
+
+/* ----------------------- Settings ----------------------- */
+.e-select:focus, .checker:focus, .radio:focus, .uploader:focus { outline: none; }
+
+/* ----------------------- Select ----------------------- */
+.e-select { position: relative; z-index: auto; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.e-select select { position: absolute !important; z-index: 50; left: 0 !important; top: 0 !important; right: 0 !important; bottom: 0 !important; height: 100% !important; width: 100% !important; filter: alpha(opacity=0) !important; -moz-opacity: 0 !important; opacity: 0 !important; border: none !important; background: none !important; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* ----------------------- Radio-buttons and checkboxes ----------------------- */
+.checker,
+.radio { display: inline-block; vertical-align: middle; position: relative; margin-right: 4px; width: 18px; height: 18px; cursor: pointer; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-transition: color 600ms ease, background 600ms ease, border 600ms ease; -moz-transition: color 600ms ease, background 600ms ease, border 600ms ease; -o-transition: color 600ms ease, background 600ms ease, border 600ms ease; transition: color 600ms ease, background 600ms ease, border 600ms ease; }
+
+.checker *,
+.radio * { display: block; position: relative; }
+
+.checker span,
+.radio span { display: block; text-align: center; }
+
+.checker input,
+.radio input { position: absolute !important; z-index: 50; left: 0 !important; top: 0 !important; right: 0 !important; bottom: 0 !important; width: 18px !important; height: 18px !important; visibility: hidden; filter: alpha(opacity=0); -moz-opacity: 0; opacity: 0; border: none; background: none; }
+
+/* ----------------------- Checkboxes states ----------------------- */
+.checker { background: #fff; border-width: 1px; border-style: solid; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; }
+.checker span { position: absolute; left: 50%; top: 50%; margin: -7px 0 0 -4px; width: 4px; height: 8px; border-right-width: 4px; border-right-style: solid; border-bottom-width: 4px; border-bottom-style: solid; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); visibility: hidden; opacity: 0; }
+
+.checker span.checked { visibility: visible; opacity: 1; }
+
+label:hover .checker,
+label:hover .checker.active,
+
+.checker.hover,
+.checker.hover.active {  }
+
+.checker.disabled { color: #dedede; background: #f5f5f5; }
+
+.checker.focus,
+.checker.focus.active {  }
+
+.m-error .checker { background: #fadcdd; }
+
+/* ----------------------- Radio-buttons states ----------------------- */
+.radio { background: #fff; border-width: 1px; border-style: solid; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; }
+.radio span { position: absolute; left: 50%; top: 50%; margin: -3px 0 0 -3px; width: 0; height: 0; border-width: 3px; border-style: solid; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; visibility: hidden; opacity: 0; }
+
+.radio span.checked { visibility: visible; opacity: 1; }
+
+.radio.hover,
+.radio.hover.active {  }
+
+.radio.disabled { color: #dedede; background: #f5f5f5; }
+
+.radio.focus,
+.radio.focus.active {  }
+
+.m-error .radio { background: #fadcdd; }
+
+/* -------------------- Transitions -------------------- */
+.radio span,
+.checker span { -webkit-transition: visibility 400ms ease, opacity 400ms ease; -moz-transition: visibility 400ms ease, opacity 400ms ease; -o-transition: visibility 400ms ease, opacity 400ms ease; transition: visibility 400ms ease, opacity 400ms ease; }

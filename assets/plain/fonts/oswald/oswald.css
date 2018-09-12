@@ -1,0 +1,36 @@
+/*
+ *  Oswald by Veron Adams - https://plus.google.com/+vernonadams/about
+ *  License - http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL (SIL Open Font License, 1.1)
+ */
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('oswald-light.eot');
+    src: url('oswald-light.eot?#iefix') format('embedded-opentype'),
+         url('oswald-light.woff') format('woff'),
+         url('oswald-light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*
+@font-face {
+    font-family: 'Oswald';
+    src: url('oswald-regular.eot');
+    src: url('oswald-regular.eot?#iefix') format('embedded-opentype'),
+         url('oswald-regular.woff') format('woff'),
+         url('oswald-regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('oswald-bold.eot');
+    src: url('oswald-bold.eot?#iefix') format('embedded-opentype'),
+         url('oswald-bold.woff') format('woff'),
+         url('oswald-bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+*/

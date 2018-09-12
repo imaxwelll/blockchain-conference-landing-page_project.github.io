@@ -1,0 +1,251 @@
+/* -------------------- Table of contents --------------------
+
+1. Global
+2. Forms
+3. Typographic
+4. Blocks / elements
+5. Header
+6. Sections
+    6.1. Features
+    6.2. Overview
+    6.3. Counters
+    6.4. Schedule
+    6.5. Subscribe
+    6.6. Speakers
+    6.7. Pricing plans
+    6.8. FAQ
+    6.9. Contacts
+7. Plugins styles
+
+----------------------- Table of content -------------------- */
+
+/* --------------------
+   -------------------- Global -------------------- */
+a { color: #009beb; }
+a:hover { color: inherit; }
+
+.m-colorized { color: #009beb !important; }
+
+/* * * * * *
+ * * * * * * Buttons * * * * * */
+.e-btn_solid { color: #fff; background-color: #009beb; }
+.e-btn_solid:hover { background-color: #008fd6; } /* Brightness - 8% */
+
+.e-btn_outline { color: #009beb !important; border-color: #009beb; background: rgba(0, 155, 235, .1); }
+.e-btn_outline:hover { border-color: #008fd6; background: rgba(0, 155, 235, .2); } /* Brightness - 8% */
+
+.e-btn_outline_white:hover { background: rgba(0, 155, 235, .1); border-color: #009beb; }
+
+.e-btn_smooth:after { color: #009beb; }
+
+
+/* --------------------
+   -------------------- Forms -------------------- */
+/* * * * * *
+ * * * * * * Form notifications * * * * * *
+                                * * * * * */
+.b-form_message_balloon__success { color: #fff; background: #009beb; }
+.b-form_message_balloon__error { color: #fff; background: #ff4d46; }
+
+/* * * * * *
+ * * * * * * Fields with icons * * * * * *
+                               * * * * * */
+.b-form_box_field.i-icon:before { color: #009beb; }
+
+/* * * * * *
+ * * * * * * Elements focus * * * * * *
+                            * * * * * */
+.b-form_box_field input:focus,
+.b-form_box_field textarea:focus,
+
+.b-form_box_field .selector.focus { border-color: #009beb; }
+
+
+/* --------------------
+   -------------------- Typographic -------------------- */
+.b-wysiwyg a { color: #009beb; }
+.b-wysiwyg blockquote { border-left-color: #009beb !important; }
+
+.b-wysiwyg li:before { color: #009beb; }
+
+
+/* --------------------
+   -------------------- Blocks / elements -------------------- */
+/* * * * * *
+ * * * * * * Carousels * * * * * */
+.b-carousel .owl-nav > div:hover { color: #009beb; }
+
+/* * * * * *
+ * * * * * * Gallery * * * * * */
+.b-gallery_item_overlay_inner { background: rgba(0, 155, 235, .75); }
+
+/* * * * * *
+ * * * * * * Countdown * * * * * */
+.b-countdown_dash_inner { color: #009beb; }
+
+
+/* --------------------
+   -------------------- Header -------------------- */
+/* * * * * *
+ * * * * * * Navigation * * * * * */
+.b-header_nav a:hover,
+.b-header_nav_toggle:hover { color: #009beb !important; }
+
+@media (max-width: 767px) {
+
+    .b-header_nav a.active { color: #009beb; }
+
+}
+
+@media (min-width: 768px) {
+
+    .b-header_nav a.active:before { background-color: #009beb; }
+
+}
+
+
+/* --------------------
+   -------------------- Sections -------------------- */
+/* * * * * *
+ * * * * * * Section header * * * * * */
+.b-section_header__stroked h2:after,
+.b-section_header__stroked h2:before { background-color: #009beb; }
+
+
+/* --------------------
+   -------------------- Features -------------------- */
+/* * * * * *
+ * * * * * * Intro summary icons * * * * * */
+.b-features_item_icon,
+.b-features_item_icon:before { color: #009beb; }
+
+
+/* --------------------
+   -------------------- Overview -------------------- */
+/* * * * * *
+ * * * * * * Box header * * * * * */
+.b-overview_header_icon,
+.b-overview_header_icon:before { color: #009beb; }
+
+/* * * * * *
+ * * * * * * Figures * * * * * */
+.b-overview_figure { color: #009beb; }
+.b-overview_figure svg rect { stroke: #009beb; }
+
+
+/* --------------------
+   -------------------- Counters -------------------- */
+.b-counters_item h3:after,
+.b-counters_item h3:before { background-color: #009beb; }
+
+
+/* --------------------
+   -------------------- Schedule -------------------- */
+/* * * * * *
+ * * * * * * Download * * * * * */
+.b-schedule_download_frame { color: #009beb; }
+
+/* * * * * *
+ * * * * * * Days nav * * * * * */
+.b-schedule_tabs_btn.current { background: #009beb !important; }
+
+/* * * * * *
+ * * * * * * Download * * * * * */
+.b-schedule_download { color: #009beb; }
+.b-schedule_download_frame { color: #009beb; }
+
+/* * * * * *
+ * * * * * * Time line * * * * * */
+.b-schedule_timeLine { border-left-color: #009beb; }
+.b-schedule_timeLine:before { background: #009beb; }
+
+/* * * * * *
+ * * * * * * Speech details * * * * * */
+.b-schedule_speech_header_dummy { background-color: #009beb; }
+
+.b-schedule_speech_header_name:before,
+.b-schedule_speech_header_time:before { color: #009beb; }
+
+.b-schedule_speech_arrow,
+.js-spoiler .b-schedule_speech_toggle:hover { color: #009beb; }
+
+/* * * * * *
+ * * * * * * Schedule slider * * * * * */
+@media (max-width: 479px) {
+
+    .b-schedule_slider .b-slider_control_captions .b-slider_bullet a.b-slider_active { color: #009beb !important; }
+
+}
+
+@media (min-width: 480px) {
+
+    .b-schedule_slider .b-slider_control_captions .b-slider_bullet a.b-slider_active { background: #009beb !important; }
+
+}
+
+/* * * * * *
+ * * * * * * Schedule day tabs * * * * * */
+@media (max-width: 479px) {
+
+    .b-schedule_day_nav a.current { color: #009beb !important; }
+
+}
+
+@media (min-width: 480px) {
+
+    .b-schedule_day_nav a.current { background: #009beb !important; }
+
+}
+
+
+/* --------------------
+   -------------------- Speakers -------------------- */
+.b-speakers_view_accounts a { color: #009beb; }
+
+
+/* --------------------
+   -------------------- Pricing plans -------------------- */
+/* * * * * *
+ * * * * * * Plans decks * * * * * */
+.b-pricing_plan_deck__popular .b-pricing_plan_deck_caption,
+.b-pricing_plan_deck__popular .b-pricing_plan_price,
+.b-pricing_plan_deck__popular .b-pricing_plan_price strong { color: #009beb; }
+
+.b-pricing_plan_deck__popular .b-pricing_plan_deck_ribbon,
+
+.b-pricing_plan_deck__popular .b-pricing_plan_purchase { background-color: #009beb; }
+.b-pricing_plan_deck__popular .b-pricing_plan_purchase:hover { background-color: #008fd6; }
+
+/* * * * * *
+ * * * * * * Plans switcher * * * * * */
+.b-pricing_switcher_box { background: #009beb; }
+.b-pricing_switcher_box:hover { background-color: #008fd6; }
+
+
+/* --------------------
+   -------------------- FAQ -------------------- */
+/* * * * * *
+ * * * * * * Slider * * * * * */
+.b-faq_slider .b-slider_bullet a { color: #008fd6 !important; }
+.b-faq_slider .b-slider_bullet a.b-slider_active { background-color: #008fd6 !important; }
+
+/* * * * * *
+ * * * * * * Device * * * * * */
+.b-faq_device_screen .e-frame { color: #008fd6 !important; }
+
+
+/* --------------------
+   -------------------- Contacts -------------------- */
+.b-contacts_details_social a,
+.b-contacts_details_list a:hover { color: #009beb; }
+
+/* * * * * *
+ * * * * * * Map * * * * * */
+.b-contacts_map_marker { color: #009beb; }
+
+
+/* ----------------------- Plugins ----------------------- */
+/* * * * * *
+ * * * * * * Leaflet Popup * * * * * */
+.b-leaflet_close:hover,
+.b-leaflet_direction:hover { color: #009beb; }

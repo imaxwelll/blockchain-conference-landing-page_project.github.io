@@ -1,0 +1,251 @@
+/* -------------------- Table of contents --------------------
+
+1. Global
+2. Forms
+3. Typographic
+4. Blocks / elements
+5. Header
+6. Sections
+    6.1. Features
+    6.2. Overview
+    6.3. Counters
+    6.4. Schedule
+    6.5. Subscribe
+    6.6. Speakers
+    6.7. Pricing plans
+    6.8. FAQ
+    6.9. Contacts
+7. Plugins styles
+
+----------------------- Table of content -------------------- */
+
+/* --------------------
+   -------------------- Global -------------------- */
+a { color: #f2c100; }
+a:hover { color: inherit; }
+
+.m-colorized { color: #f2c100 !important; }
+
+/* * * * * *
+ * * * * * * Buttons * * * * * */
+.e-btn_solid { color: #fff; background-color: #f2c100; }
+.e-btn_solid:hover { background-color: #e0b400; } /* Brightness - 8% */
+
+.e-btn_outline { color: #f2c100 !important; border-color: #f2c100; background: rgba(242, 193,  0, .1); }
+.e-btn_outline:hover { border-color: #e0b400; background: rgba(242, 193,  0, .2); } /* Brightness - 8% */
+
+.e-btn_outline_white:hover { background: rgba(242, 193,  0, .1); border-color: #f2c100; }
+
+.e-btn_smooth:after { color: #f2c100; }
+
+
+/* --------------------
+   -------------------- Forms -------------------- */
+/* * * * * *
+ * * * * * * Form notifications * * * * * *
+                                * * * * * */
+.b-form_message_balloon__success { color: #fff; background: #f2c100; }
+.b-form_message_balloon__error { color: #fff; background: #ff4d46; }
+
+/* * * * * *
+ * * * * * * Fields with icons * * * * * *
+                               * * * * * */
+.b-form_box_field.i-icon:before { color: #f2c100; }
+
+/* * * * * *
+ * * * * * * Elements focus * * * * * *
+                            * * * * * */
+.b-form_box_field input:focus,
+.b-form_box_field textarea:focus,
+
+.b-form_box_field .selector.focus { border-color: #f2c100; }
+
+
+/* --------------------
+   -------------------- Typographic -------------------- */
+.b-wysiwyg a { color: #f2c100; }
+.b-wysiwyg blockquote { border-left-color: #f2c100 !important; }
+
+.b-wysiwyg li:before { color: #f2c100; }
+
+
+/* --------------------
+   -------------------- Blocks / elements -------------------- */
+/* * * * * *
+ * * * * * * Carousels * * * * * */
+.b-carousel .owl-nav > div:hover { color: #f2c100; }
+
+/* * * * * *
+ * * * * * * Gallery * * * * * */
+.b-gallery_item_overlay_inner { background: rgba(242, 193,  0, .75); }
+
+/* * * * * *
+ * * * * * * Countdown * * * * * */
+.b-countdown_dash_inner { color: #f2c100; }
+
+
+/* --------------------
+   -------------------- Header -------------------- */
+/* * * * * *
+ * * * * * * Navigation * * * * * */
+.b-header_nav a:hover,
+.b-header_nav_toggle:hover { color: #f2c100 !important; }
+
+@media (max-width: 767px) {
+
+    .b-header_nav a.active { color: #f2c100; }
+
+}
+
+@media (min-width: 768px) {
+
+    .b-header_nav a.active:before { background-color: #f2c100; }
+
+}
+
+
+/* --------------------
+   -------------------- Sections -------------------- */
+/* * * * * *
+ * * * * * * Section header * * * * * */
+.b-section_header__stroked h2:after,
+.b-section_header__stroked h2:before { background-color: #f2c100; }
+
+
+/* --------------------
+   -------------------- Features -------------------- */
+/* * * * * *
+ * * * * * * Intro summary icons * * * * * */
+.b-features_item_icon,
+.b-features_item_icon:before { color: #f2c100; }
+
+
+/* --------------------
+   -------------------- Overview -------------------- */
+/* * * * * *
+ * * * * * * Box header * * * * * */
+.b-overview_header_icon,
+.b-overview_header_icon:before { color: #f2c100; }
+
+/* * * * * *
+ * * * * * * Figures * * * * * */
+.b-overview_figure { color: #f2c100; }
+.b-overview_figure svg rect { stroke: #f2c100; }
+
+
+/* --------------------
+   -------------------- Counters -------------------- */
+.b-counters_item h3:after,
+.b-counters_item h3:before { background-color: #f2c100; }
+
+
+/* --------------------
+   -------------------- Schedule -------------------- */
+/* * * * * *
+ * * * * * * Download * * * * * */
+.b-schedule_download_frame { color: #f2c100; }
+
+/* * * * * *
+ * * * * * * Days nav * * * * * */
+.b-schedule_tabs_btn.current { background: #f2c100 !important; }
+
+/* * * * * *
+ * * * * * * Download * * * * * */
+.b-schedule_download { color: #f2c100; }
+.b-schedule_download_frame { color: #f2c100; }
+
+/* * * * * *
+ * * * * * * Time line * * * * * */
+.b-schedule_timeLine { border-left-color: #f2c100; }
+.b-schedule_timeLine:before { background: #f2c100; }
+
+/* * * * * *
+ * * * * * * Speech details * * * * * */
+.b-schedule_speech_header_dummy { background-color: #f2c100; }
+
+.b-schedule_speech_header_name:before,
+.b-schedule_speech_header_time:before { color: #f2c100; }
+
+.b-schedule_speech_arrow,
+.js-spoiler .b-schedule_speech_toggle:hover { color: #f2c100; }
+
+/* * * * * *
+ * * * * * * Schedule slider * * * * * */
+@media (max-width: 479px) {
+
+    .b-schedule_slider .b-slider_control_captions .b-slider_bullet a.b-slider_active { color: #f2c100 !important; }
+
+}
+
+@media (min-width: 480px) {
+
+    .b-schedule_slider .b-slider_control_captions .b-slider_bullet a.b-slider_active { background: #f2c100 !important; }
+
+}
+
+/* * * * * *
+ * * * * * * Schedule day tabs * * * * * */
+@media (max-width: 479px) {
+
+    .b-schedule_day_nav a.current { color: #f2c100 !important; }
+
+}
+
+@media (min-width: 480px) {
+
+    .b-schedule_day_nav a.current { background: #f2c100 !important; }
+
+}
+
+
+/* --------------------
+   -------------------- Speakers -------------------- */
+.b-speakers_view_accounts a { color: #f2c100; }
+
+
+/* --------------------
+   -------------------- Pricing plans -------------------- */
+/* * * * * *
+ * * * * * * Plans decks * * * * * */
+.b-pricing_plan_deck__popular .b-pricing_plan_deck_caption,
+.b-pricing_plan_deck__popular .b-pricing_plan_price,
+.b-pricing_plan_deck__popular .b-pricing_plan_price strong { color: #f2c100; }
+
+.b-pricing_plan_deck__popular .b-pricing_plan_deck_ribbon,
+
+.b-pricing_plan_deck__popular .b-pricing_plan_purchase { background-color: #f2c100; }
+.b-pricing_plan_deck__popular .b-pricing_plan_purchase:hover { background-color: #e0b400; }
+
+/* * * * * *
+ * * * * * * Plans switcher * * * * * */
+.b-pricing_switcher_box { background: #f2c100; }
+.b-pricing_switcher_box:hover { background-color: #e0b400; }
+
+
+/* --------------------
+   -------------------- FAQ -------------------- */
+/* * * * * *
+ * * * * * * Slider * * * * * */
+.b-faq_slider .b-slider_bullet a { color: #e0b400 !important; }
+.b-faq_slider .b-slider_bullet a.b-slider_active { background-color: #e0b400 !important; }
+
+/* * * * * *
+ * * * * * * Device * * * * * */
+.b-faq_device_screen .e-frame { color: #e0b400 !important; }
+
+
+/* --------------------
+   -------------------- Contacts -------------------- */
+.b-contacts_details_social a,
+.b-contacts_details_list a:hover { color: #f2c100; }
+
+/* * * * * *
+ * * * * * * Map * * * * * */
+.b-contacts_map_marker { color: #f2c100; }
+
+
+/* ----------------------- Plugins ----------------------- */
+/* * * * * *
+ * * * * * * Leaflet Popup * * * * * */
+.b-leaflet_close:hover,
+.b-leaflet_direction:hover { color: #f2c100; }

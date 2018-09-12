@@ -1,0 +1,242 @@
+/* -------------------- Table of contents --------------------
+
+Author Name: Loginov Artem
+Author URI: http://loginov.biz
+ThemeForest: http://themeforest.net/user/noblige?ref=noblige
+Description: A forms stylesheet for Eventual Landing Page Template
+
+1. Forms layout
+2. Forms elements
+3. Forms fields
+4. Transitions
+5. Forms elements states
+6. Notifications
+7. Forms on photo-background
+
+   -------------------- Table of content -------------------- */
+
+/* --------------------
+   -------------------- Forms layout -------------------- */
+.b-form { position: relative; }
+
+/* * * * * *
+ * * * * * * Form boxes * * * * * */
+.b-form_box,
+.b-form_box_field,
+
+.b-form input,
+.b-form select,
+.b-form textarea { position: relative; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.b-form_box,
+.b-form_box_field { display: block; }
+
+.b-form_box { margin-bottom: 15px; }
+
+/* * * * * *
+ * * * * * * Form footer * * * * * */
+.b-form_bottom { margin-top: 15px; white-space: nowrap; }
+.b-form_bottom > a,
+.b-form_bottom > button { display: inline-block; margin-right: 7px; }
+
+.b-form_bottom__right { text-align: right; }
+.b-form_bottom__right > a,
+.b-form_bottom__right > button { display: inline-block; margin-left: 7px; margin-right: 0; }
+
+.b-form_bottom__center { text-align: center; }
+.b-form_bottom__center > a,
+.b-form_bottom__center > button { display: inline-block; margin: 0 7px; }
+
+@media (min-width: 768px) {
+
+    .b-form_bottom { margin-top: 40px; }
+
+}
+
+/* -------------------- Forms elements -------------------- */
+/* * * * * *
+ * * * * * * Labels * * * * * */
+.b-form_box_title { display: block; margin-bottom: .5em; font: 400 1.14285714285714em 'Lato', serif; }
+.b-form_box_title.required:after { content: '\00A0\002A'; }
+
+@media (min-width: 640px) {
+
+    .b-form_box__nowrap { display: table; width: 100%; border-spacing: 0; }
+
+    .b-form_box__nowrap .b-form_box_field,
+    .b-form_box__nowrap .b-form_box_title { display: table-cell; vertical-align: top; }
+
+    .b-form_box__nowrap .b-form_box_title { padding: 10px 10px 0 0; width: 25%; min-width: 140px; }
+
+}
+
+/* * * * * *
+ * * * * * * Field sets * * * * * */
+.b-form_set { margin: 12px 0 24px; }
+.b-form_set_legend { display: block; margin: 12px 0 24px; font: 700 1.125em 'Lato', sans-serif; text-transform: uppercase; letter-spacing: .025em; color: #020202; }
+
+/* * * * * *
+ * * * * * * Links in forms * * * * * */
+.b-form_box a { text-decoration: none; }
+.b-form_box a:hover { text-decoration: underline; color: inherit; }
+
+
+/* --------------------
+   -------------------- Forms fields -------------------- */
+/* * * * * *
+ * * * * * * Fields * * * * * */
+.b-form_box_field input[type="text"],
+.b-form_box_field input[type="password"],
+.b-form_box_field textarea,
+.b-form_box_field select,
+
+.b-form_box_field .e-select { position: relative; padding: 0 15px; width: 100%; height: 42px; font: 300 1em 'Lato', sans-serif; text-overflow: ellipsis; text-shadow: none; color: #333; background: #fff; border: 1px solid #cdcdcd; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+
+.b-form_box_field textarea { padding: 10px 15px; max-width: 100%; height: 100px; }
+
+.b-form_box_field .e-select { padding: 0 15px; }
+.b-form_box_field .e-select span { display: block; overflow: hidden; padding-right: 50px; width: 100%; line-height: 40px; white-space: nowrap; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.b-form_box_field .e-select:after,
+.b-form_box_field .e-select:before { position: absolute; right: 12px; width: 1px; height: 0; border-left: 4px solid transparent; border-right: 4px solid transparent; content: ''; }
+
+.b-form_box_field .e-select:after { top: 50%; margin-top: -9px; border-bottom: 5px solid #333; }
+.b-form_box_field .e-select:before { bottom: 50%; margin-bottom: -9px; border-top: 5px solid #333; }
+
+/* * * * * *
+ * * * * * * Fields with icons * * * * * */
+.b-form_box_field.i-icon input,
+.b-form_box_field.i-icon select,
+.b-form_box_field.i-icon .e-select { padding-left: 42px; }
+
+.b-form_box_field.i-icon textarea { text-indent: 27px; }
+
+.b-form_box_field.i-icon:before { position: absolute; z-index: 5; left: 0; top: 0; width: 42px; height: 42px; font-size: 20px; text-align: center; text-indent: 1px; line-height: 44px; }
+
+/* * * * * *
+ * * * * * * Radio/checkboxes * * * * * */
+.b-form_box_field label { display: inline-block; position: relative; margin: 8px 20px 0 0; }
+.b-form_box_field label > input,
+.b-form_box_field label > div { vertical-align: middle; margin: 0 12px 0 0; top: -1px; }
+
+.b-form_box_field.list label { display: block; }
+
+.b-form_box_field label .checked + span { font-weight: 700; }
+
+
+/* --------------------
+   -------------------- Transitions -------------------- */
+/* * * * * *
+ * * * * * * Fields * * * * * */
+.b-form_box_field input,
+.b-form_box_field textarea,
+.b-form_box_field select,
+
+.b-form_box_field .e-select { -webkit-transition: color 400ms, background 400ms, border 400ms, -webkit-box-shadow 400ms; -moz-transition: color 400ms, background 400ms, border 400ms, -moz-box-shadow 400ms; -o-transition: color 400ms, background 400ms, border 400ms, box-shadow 400ms; transition: color 400ms, background 400ms, border 400ms, box-shadow 400ms; }
+
+
+/* --------------------
+   -------------------- Forms elements states -------------------- */
+/* * * * * *
+ * * * * * * Fields disabled * * * * * */
+.b-form_box_field input[disabled],
+.b-form_box_field textarea[disabled],
+.b-form_box_field select[disabled],
+.b-form_box_field .e-select.disabled { color: #999; background: #f5f5f5; border-color: #d5d5d5; cursor: not-allowed; }
+
+/* * * * * *
+ * * * * * * Elements error * * * * * */
+.b-form_box_field.m-error input,
+.b-form_box_field.m-error textarea,
+
+.b-form_box_field.m-error .selector { border-color: #f1645f; }
+
+/* * * * * *
+ * * * * * * Placeholders * * * * * */
+.b-form_box_field input[placeholder],
+.b-form_box_field textarea[placeholder] { text-overflow: ellipsis; }
+
+.b-form_box_field input::-webkit-input-placeholder,
+.b-form_box_field textarea::-webkit-input-placeholder { font-style: normal; color: #aaa; text-overflow: ellipsis; -webkit-transition: all 250ms ease; -moz-transition: all 250ms ease; transition: all 250ms ease; }
+
+.b-form_box_field input:-moz-placeholder,
+.b-form_box_field textarea:-moz-placeholder { font-style: normal; color: #aaa; text-overflow: ellipsis; -webkit-transition: all 250ms ease; -moz-transition: all 250ms ease; transition: all 250ms ease; }
+
+.b-form_box_field input:-ms-input-placeholder,
+.b-form_box_field textarea:-ms-input-placeholder { font-style: normal; color: #aaa; text-overflow: ellipsis; -webkit-transition: all 250ms ease; -moz-transition: all 250ms ease; transition: all 250ms ease; }
+
+.b-form_box_field select,
+.b-form_box_field .e-select { color: #aaa; }
+
+/* * * * * *
+ * * * * * * Placeholders on focus * * * * * */
+.b-form_box_field input:focus:-moz-placeholder,
+.b-form_box_field textarea:focus:-moz-placeholder { color: transparent; }
+
+.b-form_box_field input:focus::-webkit-input-placeholder,
+.b-form_box_field textarea:focus::-webkit-input-placeholder { color: transparent; }
+
+.b-form_box_field input:focus:-ms-input-placeholder,
+.b-form_box_field textarea:focus:-ms-input-placeholder { color: transparent; }
+
+.b-form_box_field select:focus,
+.b-form_box_field .e-select.focus { color: #3c3c3c; }
+
+
+/* --------------------
+   -------------------- Notifications -------------------- */
+/* * * * * *
+ * * * * * * Notices * * * * * */
+.b-form_notice,
+.b-form_box_notice { margin-top: 6px; font: italic .875em 'Lato', sans-serif; }
+
+.b-form_box_field_error { margin: 8px 0 0; font: normal .875em 'Lato', sans-serif; color: #ff4d46; }
+
+@media (min-width: 768px) {
+
+    .b-form_box_field_error { position: absolute; z-index: 5; left: 0; bottom: 100%; right: 0; margin: 0 auto 15px; padding: 8px 5px; width: 80%; text-align: center; white-space: nowrap; color: #fff; background: #ff4d46; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; opacity: 0; visibility: hidden; -webkit-transform: translate(0, -20px); -moz-transform: translate(0, -20px); -o-transform: translate(0, -20px); transform: translate(0, -20px); -webkit-transition: all 400ms ease; -moz-transition: all 400ms ease; -o-transition: all 400ms ease; transition: all 400ms ease; }
+    .b-form_box_field_error:before { position: absolute; left: 50%; top: 100%; margin: -1px 0 0 -6px; width: 0; height: 0; border-top: 7px solid #ff4d46; border-left: 7px solid transparent; border-right: 7px solid transparent; content: ''; }
+
+    .m-error .b-form_box_field_error { opacity: 1; visibility: visible; -webkit-transform: translate(0, 0); -moz-transform: translate(0, 0); transform: translate(0, 0); }
+
+}
+
+/* * * * * *
+ * * * * * * Form notifications * * * * * */
+.b-form_message { padding-bottom: 24px; overflow: hidden; visibility: hidden; opacity: 0; -webkit-transition: visibility 600ms, opacity 600ms, overflow 600ms; -moz-transition: visibility 600ms, opacity 600ms, overflow 600ms; -o-transition: visibility 600ms, opacity 600ms, overflow 600ms; transition: visibility 600ms, opacity 600ms, overflow 600ms; }
+.b-form_message__show { visibility: visible; opacity: 1; overflow: visible; }
+
+.b-form_message + form { visibility: visible; opacity: 1; -webkit-transition: visibility 600ms, opacity 600ms; -moz-transition: visibility 600ms, opacity 600ms; -o-transition: visibility 600ms, opacity 600ms; transition: visibility 600ms, opacity 600ms; }
+.b-form_message + form.b-form__hide { visibility: hidden; opacity: 0; }
+
+.b-form_message_balloon { position: relative; padding: 24px; font: 400 1em/1.25 'Lato', sans-serif; text-align: center; color: #333; background: #f5f5f5; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+.b-form_message_balloon * { margin-top: 0 !important; }
+
+.b-form_message_balloon h3 { margin-bottom: .5em; font: 900 1.25em/1.15 'Lato', serif; text-transform: uppercase; letter-spacing: .05em; }
+
+/* * * * * *
+ * * * * * * Popup success * * * * * */
+.b-success_buttons { margin-top: 40px; text-align: center; }
+
+.b-success .b-section_header .i-icon { display: block !important; margin: 0 0 20px !important; font-size: 52px !important; }
+.b-success .b-wysiwyg { text-align: center; font-size: 20px; }
+
+
+/* --------------------
+   -------------------- Forms on photo-background -------------------- */
+/* * * * * *
+ * * * * * * Fields * * * * * */
+.b-section__background .b-form_box_field input[type="text"],
+.b-section__background .b-form_box_field input[type="password"],
+.b-section__background .b-form_box_field textarea,
+.b-section__background .b-form_box_field select,
+
+.b-section__background .b-form_box_field .e-select { border-color: transparent; }
+
+/* * * * * *
+ * * * * * * Notices * * * * * */
+.b-section__background .b-form_box_field_error { color: #fff; }
+
+/* * * * * *
+ * * * * * * Form notifications * * * * * */
+.b-section__background .b-form_message_balloon { padding: 0; color: #fff; background: transparent; }

@@ -1,0 +1,30 @@
+/* -------------------- Table of contents --------------------
+
+1. Sections
+    1.1. Intro
+    1.1. Counters
+    1.1. Subscribe
+    1.1. SignUp
+
+----------------------- Table of content -------------------- */
+
+/* --------------------
+   -------------------- Intro -------------------- */
+.b-intro__background { background-image: url('../../images/gallery/bentley.jpg'); }
+
+.b-intro__slider .b-slider_item__first .b-intro_wrapper { background-image: url('../../images/gallery/bentley.jpg'); }
+.b-intro__slider .b-slider_item__second .b-intro_wrapper { background-image: url('../../images/gallery/people.jpg'); }
+
+.m-touch .b-intro__video { background-image: url('../../images/gallery/slide-2.jpg'); }
+
+/* --------------------
+   -------------------- Counters -------------------- */
+.b-counters { background-image: url('../../images/gallery/bentley.jpg'); }
+
+/* --------------------
+   -------------------- Subscribe -------------------- */
+.b-subscribe { background-image: url('../../images/gallery/bentley.jpg'); }
+
+/* --------------------
+   -------------------- SignUp -------------------- */
+.b-signUp { background-image: url('../../images/gallery/bentley.jpg'); }

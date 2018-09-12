@@ -1,0 +1,251 @@
+/* -------------------- Table of contents --------------------
+
+1. Global
+2. Forms
+3. Typographic
+4. Blocks / elements
+5. Header
+6. Sections
+    6.1. Features
+    6.2. Overview
+    6.3. Counters
+    6.4. Schedule
+    6.5. Subscribe
+    6.6. Speakers
+    6.7. Pricing plans
+    6.8. FAQ
+    6.9. Contacts
+7. Plugins styles
+
+----------------------- Table of content -------------------- */
+
+/* --------------------
+   -------------------- Global -------------------- */
+a { color: #e97a6d; }
+a:hover { color: inherit; }
+
+.m-colorized { color: #e97a6d !important; }
+
+/* * * * * *
+ * * * * * * Buttons * * * * * */
+.e-btn_solid { color: #fff; background-color: #e97a6d; }
+.e-btn_solid:hover { background-color: #d46f63; } /* Brightness - 8% */
+
+.e-btn_outline { color: #e97a6d !important; border-color: #e97a6d; background: rgba(233, 122, 109, .1); }
+.e-btn_outline:hover { border-color: #d46f63; background: rgba(233, 122, 109, .2); } /* Brightness - 8% */
+
+.e-btn_outline_white:hover { background: rgba(233, 122, 109, .1); border-color: #e97a6d; }
+
+.e-btn_smooth:after { color: #e97a6d; }
+
+
+/* --------------------
+   -------------------- Forms -------------------- */
+/* * * * * *
+ * * * * * * Form notifications * * * * * *
+                                * * * * * */
+.b-form_message_balloon__success { color: #fff; background: #e97a6d; }
+.b-form_message_balloon__error { color: #fff; background: #ff4d46; }
+
+/* * * * * *
+ * * * * * * Fields with icons * * * * * *
+                               * * * * * */
+.b-form_box_field.i-icon:before { color: #e97a6d; }
+
+/* * * * * *
+ * * * * * * Elements focus * * * * * *
+                            * * * * * */
+.b-form_box_field input:focus,
+.b-form_box_field textarea:focus,
+
+.b-form_box_field .selector.focus { border-color: #e97a6d; }
+
+
+/* --------------------
+   -------------------- Typographic -------------------- */
+.b-wysiwyg a { color: #e97a6d; }
+.b-wysiwyg blockquote { border-left-color: #e97a6d !important; }
+
+.b-wysiwyg li:before { color: #e97a6d; }
+
+
+/* --------------------
+   -------------------- Blocks / elements -------------------- */
+/* * * * * *
+ * * * * * * Carousels * * * * * */
+.b-carousel .owl-nav > div:hover { color: #e97a6d; }
+
+/* * * * * *
+ * * * * * * Gallery * * * * * */
+.b-gallery_item_overlay_inner { background: rgba(233, 122, 109, .75); }
+
+/* * * * * *
+ * * * * * * Countdown * * * * * */
+.b-countdown_dash_inner { color: #e97a6d; }
+
+
+/* --------------------
+   -------------------- Header -------------------- */
+/* * * * * *
+ * * * * * * Navigation * * * * * */
+.b-header_nav a:hover,
+.b-header_nav_toggle:hover { color: #e97a6d !important; }
+
+@media (max-width: 767px) {
+
+    .b-header_nav a.active { color: #e97a6d; }
+
+}
+
+@media (min-width: 768px) {
+
+    .b-header_nav a.active:before { background-color: #e97a6d; }
+
+}
+
+
+/* --------------------
+   -------------------- Sections -------------------- */
+/* * * * * *
+ * * * * * * Section header * * * * * */
+.b-section_header__stroked h2:after,
+.b-section_header__stroked h2:before { background-color: #e97a6d; }
+
+
+/* --------------------
+   -------------------- Features -------------------- */
+/* * * * * *
+ * * * * * * Intro summary icons * * * * * */
+.b-features_item_icon,
+.b-features_item_icon:before { color: #e97a6d; }
+
+
+/* --------------------
+   -------------------- Overview -------------------- */
+/* * * * * *
+ * * * * * * Box header * * * * * */
+.b-overview_header_icon,
+.b-overview_header_icon:before { color: #e97a6d; }
+
+/* * * * * *
+ * * * * * * Figures * * * * * */
+.b-overview_figure { color: #e97a6d; }
+.b-overview_figure svg rect { stroke: #e97a6d; }
+
+
+/* --------------------
+   -------------------- Counters -------------------- */
+.b-counters_item h3:after,
+.b-counters_item h3:before { background-color: #e97a6d; }
+
+
+/* --------------------
+   -------------------- Schedule -------------------- */
+/* * * * * *
+ * * * * * * Download * * * * * */
+.b-schedule_download_frame { color: #e97a6d; }
+
+/* * * * * *
+ * * * * * * Days nav * * * * * */
+.b-schedule_tabs_btn.current { background: #e97a6d !important; }
+
+/* * * * * *
+ * * * * * * Download * * * * * */
+.b-schedule_download { color: #e97a6d; }
+.b-schedule_download_frame { color: #e97a6d; }
+
+/* * * * * *
+ * * * * * * Time line * * * * * */
+.b-schedule_timeLine { border-left-color: #e97a6d; }
+.b-schedule_timeLine:before { background: #e97a6d; }
+
+/* * * * * *
+ * * * * * * Speech details * * * * * */
+.b-schedule_speech_header_dummy { background-color: #e97a6d; }
+
+.b-schedule_speech_header_name:before,
+.b-schedule_speech_header_time:before { color: #e97a6d; }
+
+.b-schedule_speech_arrow,
+.js-spoiler .b-schedule_speech_toggle:hover { color: #e97a6d; }
+
+/* * * * * *
+ * * * * * * Schedule slider * * * * * */
+@media (max-width: 479px) {
+
+    .b-schedule_slider .b-slider_control_captions .b-slider_bullet a.b-slider_active { color: #e97a6d !important; }
+
+}
+
+@media (min-width: 480px) {
+
+    .b-schedule_slider .b-slider_control_captions .b-slider_bullet a.b-slider_active { background: #e97a6d !important; }
+
+}
+
+/* * * * * *
+ * * * * * * Schedule day tabs * * * * * */
+@media (max-width: 479px) {
+
+    .b-schedule_day_nav a.current { color: #e97a6d !important; }
+
+}
+
+@media (min-width: 480px) {
+
+    .b-schedule_day_nav a.current { background: #e97a6d !important; }
+
+}
+
+
+/* --------------------
+   -------------------- Speakers -------------------- */
+.b-speakers_view_accounts a { color: #e97a6d; }
+
+
+/* --------------------
+   -------------------- Pricing plans -------------------- */
+/* * * * * *
+ * * * * * * Plans decks * * * * * */
+.b-pricing_plan_deck__popular .b-pricing_plan_deck_caption,
+.b-pricing_plan_deck__popular .b-pricing_plan_price,
+.b-pricing_plan_deck__popular .b-pricing_plan_price strong { color: #e97a6d; }
+
+.b-pricing_plan_deck__popular .b-pricing_plan_deck_ribbon,
+
+.b-pricing_plan_deck__popular .b-pricing_plan_purchase { background-color: #e97a6d; }
+.b-pricing_plan_deck__popular .b-pricing_plan_purchase:hover { background-color: #d46f63; }
+
+/* * * * * *
+ * * * * * * Plans switcher * * * * * */
+.b-pricing_switcher_box { background: #e97a6d; }
+.b-pricing_switcher_box:hover { background-color: #d46f63; }
+
+
+/* --------------------
+   -------------------- FAQ -------------------- */
+/* * * * * *
+ * * * * * * Slider * * * * * */
+.b-faq_slider .b-slider_bullet a { color: #d46f63 !important; }
+.b-faq_slider .b-slider_bullet a.b-slider_active { background-color: #d46f63 !important; }
+
+/* * * * * *
+ * * * * * * Device * * * * * */
+.b-faq_device_screen .e-frame { color: #d46f63 !important; }
+
+
+/* --------------------
+   -------------------- Contacts -------------------- */
+.b-contacts_details_social a,
+.b-contacts_details_list a:hover { color: #e97a6d; }
+
+/* * * * * *
+ * * * * * * Map * * * * * */
+.b-contacts_map_marker { color: #e97a6d; }
+
+
+/* ----------------------- Plugins ----------------------- */
+/* * * * * *
+ * * * * * * Leaflet Popup * * * * * */
+.b-leaflet_close:hover,
+.b-leaflet_direction:hover { color: #e97a6d; }

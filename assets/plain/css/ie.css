@@ -1,0 +1,25 @@
+/* --------------------
+   -------------------- Forms fields -------------------- */
+
+/* * * * * *
+ * * * * * * Fields * * * * * *
+                    * * * * * */
+.b-form_box_field input[type="text"],
+.b-form_box_field input[type="password"],
+.b-form_box_field textarea,
+.b-form_box_field select,
+.b-form_box_field .e-select span { line-height: 40px; }
+
+
+/* --------------------
+   -------------------- Blocks / elements -------------------- */
+/* * * * * *
+ * * * * * * Carousels * * * * * */
+.b-carousel .owl-nav > div { line-height: auto; }
+
+.b-carousel .owl-prev:before { line-height: 28px; }
+.b-carousel .owl-next:before { line-height: 32px; }
+
+
+/* --------------------
+   -------------------- Loading -------------------- */
